@@ -1,31 +1,98 @@
     html {
         margin: 0;
         padding: 0;
+        /* background-color: #000; */
+        font-family: 'Lato', sans-serif;
     }
     body {
-        margin: 0;
+        width: 70%;
+        margin: 0 auto;
         padding: 0;
-        background-color: beige;
     }
+/*----- [Grid Template Containet]------
+-----------------------------------*/
 .container {
     display: grid;
-    grid-template-columns: 20% 1fr 30%;
+    grid-template-columns: 100px 1fr 30%;
     grid-template-areas: "menu-top menu-top menu-top"
                          "menu-left grid-library grid-library"
                          "menu-left grid-library grid-library";
 }      
-
 .menu-top {
     grid-area: menu-top;
     height: 50px;
-    border: 1px solid red;
+    background-color: white;
+    box-shadow: 0px 3px 6px #aaaaaa;
+    
 }
 .menu-left {
     grid-area: menu-left;
-    border: 1px solid red;
-    height: 100vh;
+
+    background-color: #fd6564;
 }
 .grid-library {
     grid-area: grid-library;
-    border: 1px solid red;
+    background-color: #fff;
+}
+
+/*--- [Grid Template grid-library]----
+-----------------------------------*/
+
+.grid-library {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4%;
+    grid-gap: 20px;
+}
+.item-grid {
+    border: 1px solid blue;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*--- [Nav top]----
+-----------------------------------*/
+.menu-topContainer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.menu-top--logo {
+    cursor: pointer;
+    height: inherit;
+}
+.menu-top--logo img {
+    height: 45px;
+    margin-left: 15px;
+    
+}
+.menu-topUserName p {
+    margin: 0px 10px;
+    height: 100%;
+    text-decoration: none;
+
+}
+.menu-topUserPhoto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px ;
+    margin-right: 10px;
+}
+.menu-topUserConfi img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+.menu-topUser {
+    display: flex;
+    margin-right: 15px;
+    height: 100%;
+    align-items: center;
+    
+}
+.menu-topUser a {
+    text-decoration: none;
+    color: black;
 }
