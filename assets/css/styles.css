@@ -35,19 +35,6 @@
     background-color: #fff;
 }
 
-/*--- [Grid Template grid-library]----
------------------------------------*/
-
-.grid-library {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 4%;
-    grid-gap: 20px;
-}
-.item-grid {
-    border: 1px solid blue;
-    grid-template-columns: repeat(3, 1fr);
-}
 
 /*--- [Nav top]----
 -----------------------------------*/
@@ -133,7 +120,7 @@
 .menu-left {
     font-family: 'Lato', sans-serif;
     margin-left: 10px;
-    height: 94vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,7 +134,7 @@
     justify-content: space-around;
 }
 .menu-left--icons img {
-    width: 70px;
+    width: 80px;
 }
 .menu-left--conf  {
     display: flex;
@@ -156,4 +143,21 @@
 }
 .menu-left--conf img {
     width: 70px;
+}
+
+/*--- [Grid Template grid-library]----
+-----------------------------------*/
+
+.grid-library {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4%;
+    grid-gap: 20px;
+}
+.item-grid {
+    
+}
+.item-grid--title img {
+    width: 100%;
+    height: 350px;
 }
